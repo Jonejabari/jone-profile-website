@@ -75,6 +75,22 @@ header{
     align-items: center;
     cursor: pointer;
 }
+.skills{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 10px;    
+}
+
+
+
+
+
+
+
+
+
 #menu-icon{
     font-size: 28px;
     margin-left: 10px;
@@ -196,7 +212,6 @@ section{
     }
 }
 
-
 @media(max-width: 1370px){
     header{
         padding: 15px 4%;
@@ -258,6 +273,7 @@ section{
         width: 100%;
         height: auto;
     }
+    
 
 }
 
