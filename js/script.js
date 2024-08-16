@@ -12,6 +12,18 @@ const sr = ScrollReveal ({
     reset: true
 });
 
+// Smooth scrolling for contacts link
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 sr.reveal('.logo',{delay:200, origin:'left'});
 sr.reveal('.navbar',{delay:400, origin:'top'});
 sr.reveal('.menu-btn',{delay:520, origin:'right'});
