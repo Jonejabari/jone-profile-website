@@ -424,3 +424,94 @@ section{
 html {
     scroll-behavior: smooth;
 }
+
+/* Center the entire container that holds project cards */
+.project-container {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Wrap the items to the next line if needed */
+    padding: 20px; /* Optional padding around the container */
+}
+
+/* Style for each project card */
+.project-card {
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent image overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    max-width: 300px; /* Adjust to your layout */
+    margin: 20px; /* Space between cards */
+    text-align: center; /* Center-align text inside the card */
+}
+
+/* Hover effect for project card */
+.project-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Style for the image inside the project card */
+.project-card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #e9ecef; /* Bottom border below image */
+}
+
+/* Style for the title inside the project card */
+.project-card h3 {
+    font-size: 1.5em; /* Larger font size */
+    margin: 15px 10px 10px; /* Margin around title */
+    color: #343a40; /* Darker color for the title */
+}
+
+/* Style for the description text inside the project card */
+.project-card p {
+    font-size: 1em; /* Regular font size */
+    color: #6c757d; /* Muted text color */
+    padding: 0 15px 15px; /* Padding around the text */
+}
+
+/* Style for the button inside the project card */
+.project-card .button {
+    display: block; /* Block-level button */
+    width: calc(100% - 30px); /* Full width minus padding */
+    margin: 15px auto; /* Center the button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded button corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for the button */
+.project-card .button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#about {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+#about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
