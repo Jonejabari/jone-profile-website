@@ -35,3 +35,9 @@ sr.reveal('.main-btn',{delay:860, origin:'left'});
 
 sr.reveal('.share',{delay:950, origin:'bottom'});
 sr.reveal('.home-img',{delay:1000, origin:'right'});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.querySelector('footer p');
+    copyrightElement.innerHTML = `&copy; ${currentYear} Jone Jabari. All Rights Reserved.`;
+});
